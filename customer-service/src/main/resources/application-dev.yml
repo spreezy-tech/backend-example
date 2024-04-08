@@ -1,0 +1,14 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spreezy
+    username: spreezy
+    password: spreezy@123
+    driverClassName: org.postgresql.Driver
+
+  # Liquibase configurations
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/customer-master-changelog.xml
